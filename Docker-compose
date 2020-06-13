@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  djhl_db:
+    container_name: djhl_db
+    image: postgres:12.3
+    restart: always
+    volumes:
+      - ./.pgdata:/var/lib/postgresql/data
+    environment:
+      - LC_ALL=C.UTF-8
+      - POSTGRES_PASSWORD=djhl_db
+      - POSTGRES_USER=djhl_db
+    ports:
+      - 5433:5432
