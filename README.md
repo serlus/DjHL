@@ -88,6 +88,6 @@ docker-compose -f Docker-compose up -d
 docker-compose -f Docker-compose stop
 ```
 
-#### ***For the installation of the prerequisites see:***
+##### ***For the installation of the prerequisites see:***
 - [Docker install](https://docs.docker.com/engine/install/)
 - [Docker-Compose install](https://docs.docker.com/compose/install/)
