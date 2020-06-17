@@ -17,8 +17,8 @@ forget to install the dev dependencies. You can know what are the dev dependenci
 1. Install the project dependencies with Poetry
 1. Copy the contrib/env-sample to .env
 1. Change te value of SECRET_KEY with a valid Django secret key
-1. If you want you can use the PostgreSQL change the DATABASE_URL with the correct parameters, but if you want to use 
-the sqlite just comment this variable!
+1. If you want, you can use PostgreSQL in docker, for that just use the Docker-compose file present in 
+the project, but if you want to use sqlite, just comment this variable!
 1. After the BD set up run the Django Migrations
 
 These steps in code:
@@ -71,3 +71,23 @@ To activate the virtualenv if your virtualenv was installed in the .venv direcot
 ```cmd
 .venv/Scripts/activate
 ```
+
+##### Running the database in docker
+
+***Prerequisites:***
+ - Docker
+ - Docker-Compose
+ 
+1. To run the database, simply run the following command.
+
+```console
+docker-compose -f Docker-compose up -d
+```
+1. To stop the database, just run the following command
+```console
+docker-compose -f Docker-compose stop
+```
+
+#### ***For the installation of the prerequisites see:***
+- [Docker install](https://docs.docker.com/engine/install/)
+- [Docker-Compose install](https://docs.docker.com/compose/install/)
