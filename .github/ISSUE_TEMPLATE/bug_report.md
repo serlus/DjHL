@@ -40,30 +40,9 @@ Steps to reproduce the behavior:
 ```bash
 Your .env content here
 ```
-
-and
-
-**/path/settings.toml**
-```toml
-[default]
-```
-
 </details>
 
-3. Having the following app code:
-
-<details>
-<summary> Code </summary>
-
-**/path/src/app.py**
-```python
-from dynaconf import settings
-...
-```
-
-</details>
-
-4. Executing under the following environment
+3. Executing under the following environment
 
 <details>
 <summary> Execution </summary>
@@ -80,24 +59,9 @@ $ python /path/src/app.py
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
-**Debug output**
-
-<details>
-<summary> Debug Output </summary>
-
-```bash
-
-export `DEBUG_LEVEL_FOR_DYNACONF=DEBUG` reproduce your problem and paste the output here
-
-```
-
-</details>
 
 **Environment (please complete the following information):**
  - OS: [e.g. Linux/Fedora29, Windows/x.x.x, Linux/Ubuntu16.x]
- - Dynaconf Version [e.g. 2.0.0/source]
- - Frameworks in use (Flask, Django? versions..)
 
 **Additional context**
 Add any other context about the problem here.
-s
