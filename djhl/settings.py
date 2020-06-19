@@ -34,8 +34,8 @@ INSTALLED_APPS = [
     # 3rd-Party apps
     'rest_framework',
     # Local Apps
-    'djhl.book',
-    'djhl.user',
+    'djhl.book.apps.BookConfig',
+    'djhl.user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
