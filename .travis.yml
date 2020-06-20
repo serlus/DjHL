@@ -1,0 +1,21 @@
+language: python
+python:
+  - 3.8.2
+services:
+  - postgresql
+addons:
+  postgresql: '10'
+before_script:
+  - psql -c "CREATE DATABASE travisci;" -U postgres
+  - python manage.py migrate --noinput
+env:
+  global:
+    - DATABASE_URL=postgres://postgres@localhost/travisci
+install:
+  - cp contrib/env-sample .env
+  - pip install pip -U
+  - pip install -r requirements.txt
+  - pip install pytest pytest-django flake8 # These are development dependencies
+script:
+  - flake8
+  - pytest

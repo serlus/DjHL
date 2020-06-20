@@ -1,6 +1,6 @@
 # DjHL - Django Home Library
 
-![CI](https://github.com/Riverfount/DjHL/workflows/CI/badge.svg)
+[![Build Status](https://travis-ci.org/vmdesenvolvimento/DjHL.svg?branch=master)](https://travis-ci.org/vmdesenvolvimento/DjHL)
 [![Updates](https://pyup.io/repos/github/Riverfount/DjHL/shield.svg)](https://pyup.io/repos/github/Riverfount/DjHL/)
 [![Python 3](https://pyup.io/repos/github/Riverfount/DjHL/python-3-shield.svg)](https://pyup.io/repos/github/Riverfount/DjHL/)
 
