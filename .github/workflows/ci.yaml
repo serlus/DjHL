@@ -2,6 +2,11 @@ name: CI
 
 on: [push, pull_request]
 
+env:
+  SECRET_KEY: z+-mvm&4a=g=3o38k8lsg4nl37a#(nd%e3m=0+216_%)x5bcgq
+  ALLOWED_HOSTS: localhost,127.0.0.1
+  DEBUG: False
+  DATABASE_URL: postgres://djhl_db:djhl_db@localhost:5433/djhl_db
 jobs:
   test:
     runs-on: ubuntu-latest
