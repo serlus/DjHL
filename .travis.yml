@@ -11,7 +11,7 @@ before_script:
 install:
   - cp contrib/env-sample .env
   - unset DATABASE_URL
-  - DATABASE_URL=postgres://postgres@localhost/travisci
+  - export DATABASE_URL=postgres://postgres@localhost/travisci
   - pip install pip -U
   - pip install -r requirements.txt
   - pip install pytest pytest-django flake8 # These are development dependencies
