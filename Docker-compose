@@ -12,4 +12,4 @@ services:
       - POSTGRES_PASSWORD=djhl_db
       - POSTGRES_USER=djhl_db
     ports:
-      - 5433:5432
+      - 5435:5432
